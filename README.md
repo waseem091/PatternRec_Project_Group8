@@ -1,6 +1,6 @@
-# Produce Type & Variation Classifier (Corn + Ginger)
+# Produce Type & Variation Classifier (Cauliflower, Plum, Corn & Ginger)
 
-This project is a deep learning-based web application built using **Streamlit** that classifies the **type** and **variation** of agricultural produce, specifically **corn** and **ginger**, using trained **ResNet50 models**.
+This project is a deep learning-based web application built using **Streamlit** that classifies the **type** and **variation** of agricultural produce, specifically **cauliflower**, **plum**, **corn** and **ginger**, using trained **ResNet50 models**.
 
 ---
 
@@ -12,6 +12,8 @@ This project is a deep learning-based web application built using **Streamlit** 
 
 - Detect **type** of produce: Corn or Ginger
 - Classify **variations** such as:
+  - Cauliflower: Whole Head, Florets, Riced/Steaked
+  - Plum: Whole, In a Bowl, Halved/Pitted
   - Corn: Husked, Unhusked, Kernels
   - Ginger: Whole, Sliced, In-Context
 - Upload an image and get instant predictions
@@ -24,10 +26,10 @@ This project is a deep learning-based web application built using **Streamlit** 
 
 - **Architecture**: ResNet50 via Transfer Learning
 - **Framework**: TensorFlow / Keras
-- **Produce Type Model**: `produce_type_resnet50.h5`
-- **Variation Model**: `produce_variation_resnet.h5`
-- **Input Size**: 224x224 RGB images
-- **Trained on**: 6000+ images across both crop categories
+- **Produce Type Model**: `produce_type_model.pkl`
+- **Variation Model**: `produce_variation_model.pkl`
+- **Input Size**: 150x150 RGB images
+- **Trained on**: 12,000 images across all the four produces.
 
 ---
 
@@ -45,7 +47,9 @@ streamlit run app.py
 ```
 
 ## Contributors
-CV Engineer: Jacky He & Muhammad Waseem 
+CV Engineers: Jacky He & Muhammad Waseem Thameem Ansari
+Jacky He: Corn & Ginger Dataset, Model Development and Model Evaluation.
+Muhammad Waseem Thameem Ansari: Cauliflower & Plum Dataset, Model Development and Model Evaluation.
 
 
 
