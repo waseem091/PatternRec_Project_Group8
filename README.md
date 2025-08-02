@@ -45,7 +45,7 @@ streamlit run app.py
 ```
 
 ## Contributors
-CV Engineer: Jacky He
+CV Engineer: Jacky He & Muhammad Waseem 
 
 
 
