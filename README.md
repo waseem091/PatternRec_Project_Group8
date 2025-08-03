@@ -40,7 +40,7 @@ This project is a deep learning-based web application built using **Streamlit** 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/PatternRec_Project_Group8.git
+git clone --branch Produce-Type-&-Variation-Classification https://github.com/<your-username>/PatternRec_Project_Group8.git
 cd PatternRec_Project_Group8/streamlit_app
 pip install streamlit tensorflow numpy pillow matplotlib
 streamlit run app.py
